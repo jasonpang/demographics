@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/
+.tern-project
+**/*.mid
+**/*.midi
+.idea/
