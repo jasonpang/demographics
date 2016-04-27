@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+.legend-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.legend {
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+  filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));
+}
+
+.legend h4 {
+  margin: 0 0 10px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+#features {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 50vh;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: "Consolas", Monospaced;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 30px;
+  overflow: hidden;
+  filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));
+}
