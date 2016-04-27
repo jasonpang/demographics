@@ -81,6 +81,7 @@ function renderChoropleth(json) {
 
         var value = document.createElement('span');
         value.id = 'legend-value-' + i;
+        value.className = 'legend-value';
 
         item.appendChild(key);
         item.appendChild(value);
@@ -168,6 +169,13 @@ function initMap() {
             });
         });
 }
+
+let repaintInterval = setInterval(() => {
+    window.dispatchEvent(new Event('resize'));
+    if (performance.now() > 20000) {
+        clearInterval(repaintInterval);
+    }
+}, 150);
 
 map.on('load', () => {
  initMap();
